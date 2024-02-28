@@ -1,0 +1,10 @@
+body {
+  background-image: url(./assets/starry_sky.jpg);
+  margin: 0 auto;
+  max-width: 60%;
+  font-family: 'Pathway Gothic One', sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #ffffff;
+}
+
