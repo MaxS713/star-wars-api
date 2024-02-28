@@ -1,0 +1,46 @@
+.content {
+  border: 2px solid #feda4a;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin:1em;
+}
+  
+.content-parent {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 0.9s;
+}
+  
+.content-show {
+  height: auto;
+}
+
+.toggle{
+  background-color: #46AF76;
+  color: white;
+  text-align: center;
+  padding:0.5em;
+  font-size: 1;
+  font-weight: 600;
+  cursor: pointer;
+  border:none;
+}
+
+.toggle:hover, .toggle.active{
+  outline: 2px solid white;
+}
+
+.toggle.active:hover{
+  outline: 2px solid black;
+}
+
+.name-and-button{
+  display:flex;
+  align-items: center;
+  gap:1em;
+}
+
+.result-name{
+  font-size: 1.1em;
+  color: #FFE81F;
+}

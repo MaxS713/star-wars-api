@@ -1,0 +1,88 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #feda4a;
+  display: flex;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 6px;
+  margin: 0.2em;
+}
+
+#button-container {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+#button-container button {
+  background-color: #46af76;
+  color: white;
+  padding: 1rem 1.1rem;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+#button-container button:hover {
+  outline: 2px solid white;
+}
+
+#button-container button.selected {
+  outline: 2px solid white;
+}
+
+#ship-animation-right {
+  position: absolute;
+  visibility: hidden;
+  height: 150px;
+  z-index: -1;
+  animation-name: animation-right;
+  animation-duration: 25s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animation-right {
+  0% {
+    visibility: visible;
+    left: -10%;
+  }
+  20%,
+  100% {
+    left: 100%;
+  }
+}
+
+#ship-animation-left {
+  position: absolute;
+  visibility: hidden;
+  height: 150px;
+  z-index: -1;
+  animation-name: animation-left;
+  animation-duration: 25s;
+  animation-delay: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animation-left {
+  0% {
+    visibility: visible;
+    right: -10%;
+  }
+  20%,
+  100% {
+    right: 100%;
+  }
+}
